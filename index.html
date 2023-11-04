@@ -1,293 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beats Landing Page</title>
-
-    <!-- adding the css file -->
-   <link rel="stylesheet" href="./styles/style.css">
-
-    <!-- adding the poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <!-- creating the navigation menu -->
-    <nav>
-      <img src="./Photos/beatsLogo.png" alt="logo" />
-
-      <div class="nav-right-section">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Specs</a></li>
-          <li><a href="#">Case</a></li>
-          <li><a href="#">Products</a></li>
-        </ul>
-        <button>Shop</button>
-      </div>
-    </nav>
-
-    <!-- creating the main landing page -->
-    <main>
-      <img class="mainImg" src="./Photos/mainImage.png" alt="main image" />
-      <div class="main">
-        <img class="onEarImg" src="./Photos/onEar.png" alt="on ear logo" />
-        <h1>Beats 3</h1>
-        <h4>Overview</h4>
-        <p>
-          Enjoy award-winning Beats sound with wireless listening freedom and a
-          sleek, streamlined design with comfortable padded earphones,
-          delivering first-rate playback.
-        </p>
-        <div class="shopping-bag-section">
-          <img src="./Icons/shoppingBag.png" alt="shopping bag" />
-          <p>Add to Bag</p>
-          <span>N399K</span>
-        </div>
-      </div>
-    </main>
-
-    <!-- section for adding social media icons -->
-    <section class="social-media-section">
-      <img src="./Photos/appleLogo.png" alt="apple logo" />
-      <img src="./Photos/spotifyLogo.png" alt="spotify logo" />
-      <img src="./Photos/amazonLogo.png" alt="amazon logo" />
-      <img src="./Photos/youtubeLogo.png" alt="youtube logo" />
-    </section>
-
-    <!-- creating a new specification section -->
-    <section class="specification">
-      <!-- adding the specs logo -->
-      <img
-        class="specification-logo"
-        src="./Icons/specsLogo.png"
-        alt="specs logo"
-      />
-
-      <div class="specification-list">
-        <!-- creating a division for holding all the specifications -->
-        <div class="specification-list-items">
-          <!-- creating a division for each specifications -->
-          <div>
-            <img src="./Icons/bluetooth.png" alt="bluetooth" />
-            <p>Connection</p>
-            <p>Bluetooth v5.2</p>
-          </div>
-
-          <div>
-            <img src="./Icons/battery.png" alt="battery" />
-            <p>Battery</p>
-            <p>Duration 40h</p>
-          </div>
-
-          <div>
-            <img src="./Icons/charger.png" alt="charger" />
-            <p>Load</p>
-            <p>Fast Charge 4.2-AAC</p>
-          </div>
-
-          <div>
-            <img src="./Icons/mic.png" alt="mic" />
-            <p>Microphone</p>
-            <p>Supports Apple Siri and Google</p>
-          </div>
-        </div>
-
-        <!-- adding an image with respect to the specification -->
-        <img
-          src="./Photos/specsImage.png"
-          alt="specification headphone image"
-        />
-      </div>
-    </section>
-
-    <!-- creating a case section -->
-    <section class="case">
-      <!-- adding the case logo here -->
-      <img class="case-logo" src="./Icons/caseLogo.png" alt="case logo" />
-
-      <!-- creating a new division to wrap all case items -->
-      <div class="case-item">
-        <img
-          class="case-item-img"
-          src="./Photos/caseImage.png"
-          alt="case image"
-        />
-
-        <div>
-          <p>
-            With a comfortable and adaptable case so that you can store it
-            whenever you want, and keep your durability forever.
-          </p>
-          <p>
-            <img src="./Icons/group.png" alt="group" />
-            More Info
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- section to allow user to buy a product -->
-    <section class="buy-product">
-      <div>
-        <h3>Immense yourself in your music</h3>
-        <p>Buy Now, up to 40% off.</p>
-        <div>
-          <img src="./Icons/shoppingBag.png" alt="shopping bag" />
-          <p>Buy Now</p>
-        </div>
-      </div>
-
-      <img src="./Photos/buyNowSectionImage.png" alt="buy now" />
-    </section>
-
-    <!-- creating a product section to display the items -->
-    <section class="product">
-      <!-- adding the choose style logo -->
-      <img class="product-logo" src="./Icons/productLogo.png" alt="logo" />
-
-      <!-- creating a new division for adding all the products to showcase to user -->
-      <div class="product-items">
-        <!-- creating card for product -->
-        <div class="product-card">
-          <img class="product-img" src="./Photos/black.png" alt="black" />
-          <div class="product-info">
-            <p>
-              Black <br />
-              <span>N299K</span>
-            </p>
-
-            <div>
-              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlitis.css">
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/c3171e834c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section start  -->
+    <header>
+        <div class="head-section layout">
+            <div class="nav-bar flex space-between align-center">
+                <div class="logo uppercase f-w-700 letter-spacing2"><span>VISHAL </span>SANWAL</div>
+                <div class="nav-links">
+                   
+                    <ul class="flex f-w-600">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <button class="btn hire-me-btn">Hire Me</button>
+                <input type="checkbox" name="checkbox" id="click">
+                <label for="click" class="menu-btn" id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
             </div>
-          </div>
-        </div>
+            <!-- content  -->
+            <div class="content flex align-center">
+                <!-- left section  -->
+                <div class="left flex2">
+                    <h4 class="uppercase letter-spacing2">I'm <span>Vishal Sanwal</span> </h4>
+                    <h2 class="my-t-10 uppercase letter-spacing2 f-w-700">Web Developer</h2>
+                    <p class="my-t-10">I am a professional Web Developer </p>
+                    <button class="btn btn2 my-t-20">Download CV</button>
+                </div>
 
-        <!-- creating card for product -->
-        <div class="product-card">
-          <img
-            class="product-img"
-            src="./Photos/redBlack.png"
-            alt="red black"
-          />
-          <div class="product-info">
-            <p>
-              Red Black <br />
-              <span>N299K</span>
-            </p>
-
-            <div>
-              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+                <!-- right section  -->
+                <div class="right flex3">
+                    <img src="./asset/DSC_1521.jpg" style="border-radius: 5%; " height="400px" alt="dslrCpy">
+                    <div class="color-box"></div>    
+                </div>
             </div>
-          </div>
         </div>
+    </header>        
+    <!-- about section start  -->
+    <section class="about-me-sec">
+        <div class="about-sec layout">
+            <h3 class="uppercase pd-t-30 text-center">About Me</h3>
+            <hr class="w55 my-t-10">
 
-        <!-- creating card for product -->
-        <div class="product-card">
-          <img
-            class="product-img"
-            src="./Photos/nightBlack.png"
-            alt="Night Black"
-          />
-          <div class="product-info">
-            <p>
-              Night Black <br />
-              <span>N299K</span>
-            </p>
+            <div class="about-content flex justify-center align-center">
+                <!-- left side  -->
+                <div class="left flex2">
+                    <h2 class="uppercase letter-spacing2">Web Desinger</h2>
+                    <p class="my-t-10">I am a professional web desinger. I have done many projects for my clients. I am a part time freelancer and I do freelancing in part time.</p>
 
-            <div>
-              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+                    <ul>
+                        <li><span class="f-w-600">HTML / CSS /JavaScript / React / Node / MongoDB</span></li>
+                    </ul>
+
+                    <button class="btn my-t-20">Hire Me</button>
+                </div>
+                <!-- right side  -->
+                <div class="right flex3">
+                    <img src="./asset/DSC_1521.jpg" style="border-radius: 10%;" alt="">
+                    <hr>
+
+                </div>
             </div>
-          </div>
         </div>
-
-        <!-- creating card for product -->
-        <div class="product-card">
-          <img class="product-img" src="./Photos/blue.png" alt="blue" />
-          <div class="product-info">
-            <p>
-              Blue <br />
-              <span>N299K</span>
-            </p>
-
-            <div>
-              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
-            </div>
-          </div>
-        </div>
-
-        <!-- creating card for product -->
-        <div class="product-card">
-          <img
-            class="product-img"
-            src="./Photos/twilightGray.png"
-            alt="twilight"
-          />
-          <div class="product-info">
-            <p>
-              Black <br />
-              <span>N299K</span>
-            </p>
-
-            <div>
-              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
+    <!-- about section end  -->
 
-    <!-- designing the footer area of the website -->
+  
+
+  
+    <!-- contact-us section start  -->
+    <section class="contact-us-sec">
+        <div class="contact-us layout">
+            <h3 class="text-center uppercase pd-30">Contact us</h3>
+            <div class="contact-details flex space-between align-center">
+                <div class="left-sec">
+                    <h5> Address -</h5>
+                    <p>Ramnagar,Nainital<br> Uttarakhand - 244715</p>
+                </div>
+                <div class="center-sec">
+                    <h5>Contact No.</h5>
+                    <p>Mobile No. +91-7906618943</p>
+                    <h5>Email Id</h5>
+                    <p>viratrmr@gmail.com</p>
+                </div>
+                <div class="right-sec text-center">
+                    <form action="">
+                        Email : <input type="email" id="email-id" placeholder="Email"> <br>
+                        <button class="btn btn2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact-us section end  -->
+
+    <!-- footer section  -->
     <footer>
-      <img class="footer-logo" src="./Photos/beatsLogo.png" alt="logo" />
-
-      <!-- creating the product navigation menu -->
-      <ul>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Headphones</a></li>
-        <li><a href="#">Earphones</a></li>
-        <li><a href="#">Earbuds</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-
-      <!-- creating the support navigation menu -->
-      <ul>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Product Help</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Updates</a></li>
-        <li><a href="#">Provides</a></li>
-      </ul>
-
-      <!-- adding subscribe and social media icon buttons -->
-      <div class="footer-subscription">
-        <!-- adding the division for subscribe -->
-        <div>
-          <input type="email" placeholder="Email" />
-          <div class="subscribe-button">
-            <img src="./Icons/rightArrow.png" alt="rightArrow" />
-            <p>Subscribe</p>
-          </div>
+        <div class="footer-sec layout text-center">
         </div>
-
-        <!-- social media icons -->
-        <div>
-          <img src="./Icons/facebook.png" alt="facebook" />
-          <img src="./Icons/twitter.png" alt="twitter" />
-          <img src="./Icons/instagram.png" alt="instagram" />
-          <img src="./Icons/linkedin.png" alt="linkedin" />
-        </div>
-      </div>
-
-      <!-- adding top arrow for icon for moving the page to top -->
-      <img class="arrow-up" src="./Icons/upArrow.png" alt="upArrow" />
     </footer>
-  </body>
-</html>
+</body>   
+    </html> 
